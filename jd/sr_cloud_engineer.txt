@@ -1,0 +1,5 @@
+Role: Senior GCP Engineer
+Skills: GCP, Terraform, CI/CD (Cloud Build), BigQuery, IAM, VPC, Cloud Functions, Pub/Sub, Monitoring
+Experience: 5+ years in cloud engineering, 3+ in GCP
+Certifications: Preferred GCP Professional Cloud Architect or DevOps
+Good to have skills: GKE
