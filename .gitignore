@@ -1,4 +1,3 @@
-app/__pycache__/** 
-basic_app/__pycache__/**
+**/__pycache__/
 .env
 .venv-cvpilot/
