@@ -3,14 +3,16 @@
         AI copilot for CV/resume evaluations like a bird on LinkedIn
         — just trying to land the perfect job without ruffling too many feathers
 
+        ![CV Assistant UI](./images/cv_assistant.png)
+
 ## Basic App
 
-### How to run ?
+### How to setup ?
 
         Basic App uses Google's Gemini as it has good free tier options https://ai.google.dev/gemini-api/docs/rate-limits#free-tier
 
         Step1: Generate API key from https://aistudio.google.com/app/apikey
-                and set it in basic_app/.env
+                and set it in .env
 
         Step2: Pick a model from https://ai.google.dev/gemini-api/docs/rate-limits#free-tier
                 and configure it at basic_app/gemini_agent.py 
@@ -40,7 +42,7 @@
 
 ## Full App
 
-        UI
+        Unlike basic_app, this has a small frontend driven by streamlit
 
 ### How to build ?
 
@@ -49,9 +51,6 @@
 
 ### How to use ?
 
-        python basic_app/main.py
-        python
-        poetry install
         poetry run streamlit run app/main.py
 
 ### Tech Stack
@@ -65,6 +64,23 @@
 
 
 ## Extras
+
+### Using an already created virtualenv within poetry 
+
+1. Create a virtualenv inside your repo directory
+        python -m venv .venv-cvpilot
+        ...or...
+        pyenv virtualenv 3.11.2 .venv-cvpilot
+
+2. (the trick) Make poetry use an existing virtual environment
+        - Setup in-project configuration
+                poetry config virtualenvs.in-project true
+        - Activate virtual env 
+                 source .venv-cvpilot/bin/activate
+        - Tell poetry to use existing virtual environment
+                poetry env use  /Users/sheelava/msashishgit/cvpilot/.venv-cvpilot/bin/python
+
+### About streamlit
 
         streamlit helps convert raw data into visual delight - tables, histogram etc
                 https://docs.streamlit.io/
