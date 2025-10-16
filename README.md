@@ -3,7 +3,7 @@
         AI copilot for CV/resume evaluations like a bird on LinkedIn
         — just trying to land the perfect job without ruffling too many feathers
 
-        ![CV Assistant UI](images/cv_assistant.png)
+![CV Assistant UI](images/cv_assistant.png)
 
 ## Basic App
 
